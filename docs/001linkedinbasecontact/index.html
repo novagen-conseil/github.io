@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valoriser sa liste de contacts Linkedin avec QuantaLogic</title>
+    <style>
+        /* Styles CSS pour un thème pastel et une mise en page responsive */
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8; /* Gris très clair */
+            color: #333; /* Gris foncé */
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 960px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h1, h2, h3 {
+            color: #6c5b7b; /* Violet pastel */
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+        }
+
+        h2 {
+            font-size: 2em;
+        }
+
+        h3 {
+            font-size: 1.6em;
+        }
+
+        /* Style pour la section TL;DR */
+        .tldr {
+            background-color: #c06c8426; /* Rose pastel très clair */
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #c06c8440;
+        }
+
+        .tldr p {
+            font-style: italic;
+            color: #355c7d; /* Bleu foncé pastel */
+        }
+
+        /* Style pour les listes */
+        ul, ol {
+            padding-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        /* Style pour les liens */
+        a {
+            color: #f67280; /* Rose pastel */
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Style pour les images */
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 10px auto;
+            border-radius: 5px;
+        }
+
+        /* Style pour les tableaux */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd; /* Gris clair */
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2e7d5; /* Beige clair */
+        }
+
+        /* Style pour le code (si nécessaire) */
+        pre {
+            background-color: #eee; /* Gris très clair */
+            padding: 10px;
+            overflow-x: auto;
+            border-radius: 5px;
+        }
+
+        /* Media query pour une meilleure responsivité sur les petits écrans */
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+                padding: 10px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.6em;
+            }
+
+            h3 {
+                font-size: 1.3em;
+            }
+        }
+
+        /* Couleurs additionnelles pastel */
+        .pastel-blue { color: #a8d0e6; }
+        .pastel-green { color: #a2d5c6; }
+        .pastel-yellow { color: #f2e7d5; }
+        .pastel-orange { color: #ffcda3; }
+
+        /* Style pour les tags */
+        .tags {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #777;
+        }
+
+        .tags a {
+            color: #777;
+            background-color: #eee;
+            padding: 5px 10px;
+            border-radius: 3px;
+            margin-right: 5px;
+            text-decoration: none;
+        }
+
+        .tags a:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Utiliser QuantaLogic pour valoriser sa liste de contacts Linkedin</h1>
+
+    <section class="tldr">
+        <h2>TL;DR</h2>
+        <p>Les IA Génératives au service du raffinage et l’enrichissement de données : exploration, validation, montée à l’échelle, tout en gardant le contrôle humain pour obtenir le meilleur résultat possible.  NB : en fin d’article, nous partageons les liens vers les guides de prise en main des fonctionnalités de QuantaLogic présentées.</p>
+    </section>
+
+    <section>
+        <h3>Le point de départ</h3>
+        <p>Je dois m’appuyer sur des données peu qualifiées et organiser pour une action de communication qui ne souffre pas l’approximation.</p>
+        <img src="images/image7.png" alt="Schéma du point de départ">
+        <p>L’idée est de s’appuyer sur la versatilité des IA Génératives et les différents services de QuantaLogic pour couvrir le cheminement suivant, qui part d’une base hétérogène pour en créer de la matière structurée et utilisable.</p>
+        <p>L’objectif complémentaire est de créer des prompts et algorithmes qui vont être réutilisés dans des contextes similaires ou analogues.</p>
+        <img src="images/image8.gif" alt="Schéma de l'objectif">
+    </section>
+
+    <section>
+        <h3>Créer un Agent adapté à la manipulation de données</h3>
+        <p>Dans QuantaLogic, créer des agents est d'une grande simplicité :</p>
+        <ol>
+            <li>Définir une mission pour cet agent à travers des instructions appelées ‘System Prompts’.</li>
+            <li>Associer une liste de pouvoirs ciblés : en particulier, cela peut se faire en un clic grâce aux Toolbox prédéfinies.</li>
+        </ol>
+        <p>Cette approche facilite réellement l'adoption et l'efficacité dans le développement d'agents intelligents. ✨</p>
+        <p>Concrètement, on crée le System Prompt en posant la bonne demande :</p>
+        <img src="images/image5.png" alt="Capture d'écran du System Prompt">
+        <p>Et cette restitution devient la personnalité de notre agent :</p>
+        <img src="images/image3.png" alt="Capture d'écran de la personnalité de l'agent">
+        <p>On peut ensuite discuter avec cet agent</p>
+        <img src="images/image2.png" alt="Capture d'écran de la discussion avec l'agent">
+        <p>pour obtenir la sortie :</p>
+
+        <h3>LinkedIn Contact Categorization</h3>
+        <ul>
+            <li><h3>Données anonymisées</h3></li>
+            <li><b>Data Science</b> S... L... Ph.D., U..., Data Scientist - Principal Investigator<br> S... B..., U..., Agence Data Marketing, Data Analyst<br> G... C..., T..., Tech Lead data</li>
+            <li><b>Sales/Business Development</b> A... K..., D..., Senior Account Executive<br> H... O..., D..., Business Development Representative - French Market<br> T... P..., E..., Responsable commercial</li>
+            <li><b>Management</b> M... C..., T..., Manager<br> J...-B... P..., A..., Senior Manager Partner Ecosystem<br> L... B..., N..., Senior Manager Digital Transformation &amp; Alliances<br> M... K..., S..., Head of Product</li>
+            <li><b>Founder/CEO</b> F... A..., S..., CEO<br> T... K..., C..., Founder<br> P... S..., S..., CEO<br> E... M..., S..., CEO / Fondateur</li>
+            <li><b>Consulting</b> K... L..., S..., Consultant EPM<br> M... B..., S..., Intégrateur d'IA générative<br> A... T..., C..., Partner<br> G... D..., L... C..., Associé co-fondateur (Sésame Développement)</li>
+            <li><b>Engineering/Architecture</b> A... S..., P..., Senior Solutions Architect (Pre-Sales)<br> P... G..., S..., Senior Solutions Architect South EMEA<br> A... I..., A..., Architecte Solutions<br> A... C..., D... - The E-Commerce Company, Architecte SI</li>
+            <li><b>Product</b> G... A..., D..., Senior Product Manager<br> B... M..., O..., Technical Product Owner<br> D... F..., O..., Global Product Marketing Manager</li>
+            <li><b>Other</b> L...-N... R..., T..., Paris Chapter Lead<br> A... E... T..., O..., Member<br> A... O..., G..., Visiting Faculty Researcher<br> E... P..., A..., Member of the Global Technology Policy Council</li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>Mettre sous forme de données exploitables</h3>
+        <p>je demande à créer un csv ( … en deux étapes) avec les catégories qui m’intéressent:</p>
+        <img src="images/image1.png" alt="Capture d'écran de la demande de CSV">
+        <table>
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>URL / Email / Address Company</th>
+                <th>Position</th>
+                <th>Category</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>K. L.</td>
+                <td></td>
+                <td>Consultant EPM</td>
+                <td>Consulting</td>
+            </tr>
+            <tr>
+                <td>M. C.</td>
+                <td></td>
+                <td>Manager</td>
+                <td>Management</td>
+            </tr>
+            <tr>
+                <td>M. B.</td>
+                <td></td>
+                <td>Intégrateur d'IA générative</td>
+                <td>Other</td>
+            </tr>
+            <tr>
+                <td>A. K.</td>
+                <td></td>
+                <td>Senior Account Executive</td>
+                <td>Sales/Business Development</td>
+            </tr>
+            <tr>
+                <td>J.-B. P.</td>
+                <td></td>
+                <td>Senior Manager Partner Ecosystem</td>
+                <td>Management</td>
+            </tr>
+            <tr>
+                <td>H. O.</td>
+                <td></td>
+                <td>Business Development Representative - French Market</td>
+                <td>Sales/Business Development</td>
+            </tr>
+            <tr>
+                <td>F. A.</td>
+                <td></td>
+                <td>CEO</td>
+                <td>Founder/CEO</td>
+            </tr>
+            <tr>
+                <td>S. B.</td>
+                <td></td>
+                <td>Data Analyst</td>
+                <td>Data Science</td>
+            </tr>
+            <tr>
+                <td>G. C.</td>
+                <td></td>
+                <td>Tech Lead data</td>
+                <td>Other</td>
+            </tr>
+            <tr>
+                <td>S. L., Ph.D.</td>
+                <td></td>
+                <td>Data Scientist - Principal Investigator</td>
+                <td>Data Science</td>
+            </tr>
+            </tbody>
+        </table>
+        <p>⇒ ceci me génère une première version de qualité mais qui ne couvre pas , pour des raisons de capacités du modèle, l’exhaustivité de ma base de connaissances ( dont on pourrait imaginer qu’elle regroupe des dizaines ou centaines de milliers d’enregistrements)</p>
+        <p>Je décide d’utiliser mon Agent pour créer un algorithme, implémenté en python, pour améliorer et passer à l’échelle, sans contraintes. Je présente la démarche qui a été utilisée :</p>
+        <img src="images/image4.gif" alt="Capture d'écran de l'algorithme Python">
+        <p>Le code python est élégant, bien documenté, ajustable autant que possible.</p>
+        <img src="images/image6.png" alt="Capture d'écran du code Python">
+        <p>En une heure, j’obtiens une classification qui, bien qu’imparfaite, est de très bonne qualité et me permet d’économiser entre 8 et 12 heures de travail (ou même bien plus)! ⏱️</p>
+        <p>👉 De plus, cette méthode est facilement partageable au sein de mon équipe. Plus intéressant encore, elle démontre l’efficacité de cette approche pour des besoins similaires. Chaque fois que nous souhaitons traiter des données peu ou semi-structurées, présentant des défauts ou une absence de catégorisation, nous pouvons le faire avec efficacité, notamment dans des cas tels que :</p>
+        <ul>
+            <li>📊 Catalogues de données : catégorisation des données sensibles et personnelles</li>
+            <li>🧑‍🤝‍🧑 Données CRM</li>
+        </ul>
+        <p>C'est une réelle satisfaction de disposer de cette capacité à explorer, affiner et concevoir une stratégie grâce aux IA génératives.</p>
+        <p>🔎 Ensuite, avec ces mêmes outils, nous pouvons développer un programme plus déterministe (ou hybride) qui répondra de manière plus efficace à ces besoins.</p>
+        <p class="tags">
+            <a href="#">#IA</a>
+            <a href="#">#DataScience</a>
+            <a href="#">#Innovation</a>
+            <a href="#">#Productivité</a>
+            <a href="#">#Collaboration</a>
+        </p>
+    </section>
+
+    <section>
+        <p>PS: je ne saurais trop vous encourager à profiter des tutoriels de présentation de QuantaLogic qui donnent toutes les clés pour créer une stratégie analogue dans votre espace.</p>
+        <p>⇒ Introduction : pour un tour guidé des fonctionnalités: <a href="https://www.quantalogic.app/information-center/tutorials/getting-started/introduction?videoId=1">https://www.quantalogic.app/information-center/tutorials/getting-started/introduction?videoId=1</a></p>
+        <p>⇒ Agents : →Comment les créer : <a href="https://quantalogic.app/information-center/tutorials/agents/example-executions?videoId=1">https://quantalogic.app/information-center/tutorials/agents/example-executions?videoId=1</a></p>
+        <p>→Comment les utiliser :</p>
+        <ul>
+            <li>pour dialoguer avec une base de connaissance : ‘Building Knowledge-Powered QAgents with RAG’ : <a href="https://quantalogic.app/information-center/tutorials/agents/example-executions?videoId=7">https://quantalogic.app/information-center/tutorials/agents/example-executions?videoId=7</a></li>
+            <li>plus technique :  pour discuter avec une base de données en langage naturel ‘PostgreSQL Database Integration’ : <a href="https://quantalogic.app/information-center/tutorials/agents/example-executions?videoId=4">https://quantalogic.app/information-center/tutorials/agents/example-executions?videoId=4</a></li>
+        </ul>
+    </section>
+</div>
+</body>
+</html>
